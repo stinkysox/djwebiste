@@ -1,0 +1,49 @@
+.latest-work {
+  padding: 3rem 1rem;
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+}
+
+.latest-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.instagram-icon a {
+  color: #ff0066;
+  transition: color 0.3s ease;
+}
+
+.instagram-icon a:hover {
+  color: #ff3399;
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.grid-item {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 100, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

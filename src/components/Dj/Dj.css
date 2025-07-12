@@ -1,0 +1,57 @@
+.dj {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.dj-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dj-instruction {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Vinyl using div background */
+.dj-vinyl {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("https://i.postimg.cc/HsRfb73m/Adobe-Express-file-7.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  touch-action: none;
+}
+
+.dj-vinyl.holding {
+  box-shadow: 0 0 25px rgba(255, 0, 150, 0.4);
+  transform: scale(1.05);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
